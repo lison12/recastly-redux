@@ -5,7 +5,7 @@ var searchYouTube = ({key, query, max = 5}, callback) => {
     q: query,
     maxResults: max,
     type: 'video',
-    videoEmbeddable: 'true'
+    videoEmbeddable: 'true',
   })
     .done(({items}) => {
       if (callback) {
@@ -18,5 +18,7 @@ var searchYouTube = ({key, query, max = 5}, callback) => {
       );
     });
 };
+
+// window.searchYouTube = searchYouTube;
 
 export default searchYouTube;
