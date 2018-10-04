@@ -12,8 +12,7 @@ var mapDispatchToProps = (dispatch) => {
   return {
     handleVideoListEntryTitleClick: (video) => {
       dispatch(changeVideo(video));
-    },
-    
+    }
   };
 };
 
